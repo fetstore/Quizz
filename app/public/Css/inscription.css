@@ -1,0 +1,208 @@
+/* FICHIER CSS POUR LA VIEW INSCRIPTION ET CONNEXION  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #2c2c2c;
+}
+
+.connexion_inscription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 80%;
+  padding: 2%;
+}
+header h1 {
+  margin-bottom: 2%;
+  text-align: center;
+  color: greenyellow;
+}
+
+.formulaire-inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #222021;
+  border-radius: 10px;
+  z-index: 1;
+}
+.formulaire-inscription {
+  width: 670px;
+}
+.container-input {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 20px auto;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+/* FICHIER CSS POUR LA VIEW INSCRIPTION ET CONNEXION  */
+
+.container-input input {
+  all: unset;
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  /* border-bottom: 1px solid #fff; */
+  background: transparent;
+  outline: none;
+  color: greenyellow;
+  text-align: center;
+  position: relative;
+}
+.container-input i {
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+}
+.link_inscription_connexion {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.link_inscription_connexion:hover {
+  color: greenyellow;
+}
+/* FICHIER CSS POUR LA VIEW INSCRIPTION ET CONNEXION  */
+
+/*TEST ANIMATION */
+
+.carre {
+  width: 50px;
+  height: 50px;
+  background: greenyellow;
+  position: absolute;
+  bottom: 0%;
+  opacity: 0;
+  right: 10%;
+  animation: animate 15s linear infinite;
+  transition: all ease 0.1s;
+  z-index: -1;
+}
+.carre>img:hover {
+  cursor: pointer;
+}
+.carre img {
+  width: 90%;
+  height: 90%;
+}
+
+.carre:nth-of-type(2) {
+  width: 30px;
+  height: 30px;
+  right: 20%;
+  animation-delay: 3s;
+}
+
+.carre:nth-of-type(3) {
+  width: 60px;
+  height: 60px;
+  right: 25%;
+  animation-delay: 5s;
+}
+.carre:nth-of-type(4) {
+  width: 20px;
+  height: 20px;
+  right: 35%;
+  animation-delay: 10s;
+}
+.carre:nth-of-type(5) {
+  width: 30px;
+  height: 30px;
+  right: 40%;
+  animation-delay: 5s;
+}
+.carre:nth-of-type(6) {
+  width: 70px;
+  height: 70px;
+  right: 50%;
+  animation-delay: 3s;
+}
+.carre:nth-of-type(7) {
+  width: 20px;
+  height: 20px;
+  right: 55%;
+  animation-delay: 0s;
+}
+.carre:nth-of-type(8) {
+  width: 35px;
+  height: 35px;
+  right: 65%;
+  animation-delay: 2s;
+}
+.carre:nth-of-type(9) {
+  width: 25px;
+  height: 25px;
+  right: 70%;
+  animation-delay: 5s;
+}
+.carre:nth-of-type(10) {
+  width: 30px;
+  height: 30px;
+  right: 80%;
+  animation-delay: 1s;
+}
+.carre:nth-of-type(11) {
+  width: 50px;
+  height: 50px;
+  right: 85%;
+  animation-delay: 0s;
+}
+.carre:nth-of-type(12) {
+  width: 20px;
+  height: 20px;
+  right: 90%;
+  animation-delay: 6s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  /*format mobile*/
+  .formulaire-inscription {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .formulaire-inscription {
+    width: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /*tabelette portrait*/
+  .formulaire-inscription {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .formulaire-inscription {
+    width: 70%;
+  }
+}

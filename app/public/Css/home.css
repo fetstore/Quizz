@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #2c2c2c;
+}
+
+/************************************************** ACCEUIL WEBSITE AVANT CONNEXION*/
+.container-bienvenue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 100%;
+}
+.bienvenue {
+  text-align: center;
+  margin: 5% 0 2% 0;
+}
+
+.bienvenue h1 {
+  font-size: 2em;
+  /* padding: 2%; */
+  color: greenyellow;
+}
+
+.presentation {
+  /*main*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: 5% auto;
+  padding: 10px;
+}
+
+.presentation p {
+  /*POUR LA PARTIE REGLES AUSSI */
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+/**************************** LES REGLES DU QUIZZ */
+
+#regles {
+  height: 100vh;
+  width: 100%;
+  padding-top: 2%;
+}
+.regles {
+  text-align: center;
+  margin-bottom: 5%;
+}
+.regles h3 {
+  font-size: 34px;
+  color: greenyellow;
+}
+
+.lien_inscription {
+  color: greenyellow;
+  text-decoration-line: underline;
+}
+.jouer a  {
+  font-size: 24px;
+}
+
+/*? DEBUT DU RESPONSIVE */
+/* Styles pour les écrans de petite taille (mobiles en mode portrait)(max-width: 575px)*/
+/* Styles pour les écrans de taille moyenne (mobiles en mode paysage)(min-width: 576px) and (max-width: 767px)*/
+/* Styles pour les écrans de taille moyenne (tablettes en mode portrait) (min-width: 768px) and (max-width: 991px) */
+/* Styles pour les écrans de taille moyenne (tablettes en mode paysage) (min-width: 992px) and (max-width: 1199px)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .bienvenue h1 {
+    font-size: 35px;
+  }
+  .jouer  {
+    margin-top: 0%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Format tablette */
+  .bienvenue h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 575px) {
+  /* Format mobile */
+  .bienvenue h1 {
+    font-size: 24px;
+  }
+  /* .presentation p {
+    font-size: 18px;
+  } */
+} 
+
